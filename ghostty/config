@@ -1,0 +1,15 @@
+keybind = global:cmd+f12=toggle_quick_terminal
+
+# Navigation
+## Lines
+
+keybind = cmd+k=scroll_page_lines:-1
+keybind = cmd+j=scroll_page_lines:1
+
+## Splits
+
+keybind = cmd+option+h=goto_split:left
+keybind = cmd+option+j=goto_split:down
+keybind = cmd+option+k=goto_split:up
+keybind = cmd+option+l=goto_split:right
+
