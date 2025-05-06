@@ -1,5 +1,9 @@
 *
 !.gitignore
+
+!aerospace/
+!aerospace/*
+
 !zsh/
 !zsh/*
 
