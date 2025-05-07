@@ -1,10 +1,20 @@
+background-opacity = 0.90
+background-blur = 5
+theme = nordfox
+# Disable ligatures
+font-feature = -calt
+
 keybind = global:cmd+f12=toggle_quick_terminal
+# unbind toggle_fullscreen
+keybind = cmd+enter=unbind 
 
 # Navigation
 ## Lines
 
 keybind = cmd+k=scroll_page_lines:-1
 keybind = cmd+j=scroll_page_lines:1
+keybind = cmd+shift+k=scroll_page_lines:-10
+keybind = cmd+shift+j=scroll_page_lines:10
 
 ## Splits
 
