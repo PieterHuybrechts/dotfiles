@@ -7,6 +7,7 @@ font-feature = -calt
 keybind = global:cmd+f12=toggle_quick_terminal
 # unbind toggle_fullscreen
 keybind = cmd+enter=unbind 
+quit-after-last-window-closed = true
 
 # Navigation
 ## Lines
