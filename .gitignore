@@ -11,6 +11,9 @@
 !ghostty/
 !ghostty/*
 
+!git/
+!git/*
+
 !karabiner/
 !karabiner/*
 
