@@ -177,15 +177,11 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
-run = [
-   'move-node-to-workspace T'
-]
+run = ['move-node-to-workspace T']
 
 [[on-window-detected]]
 if.app-id="com.jetbrains.intellij"
-run = [
-   'move-node-to-workspace I'
-]
+run = ['move-node-to-workspace I']
 
 [[on-window-detected]]
 if.app-id="com.f5networks.EdgeClient"
