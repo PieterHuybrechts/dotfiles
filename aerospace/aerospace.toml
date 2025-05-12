@@ -187,3 +187,6 @@ run = ['move-node-to-workspace I']
 if.app-id="com.f5networks.EdgeClient"
 run = ["layout floating"]
 
+[[on-window-detected]]
+if.app-id="io.github.hluk.CopyQ"
+run = ["layout floating"]
