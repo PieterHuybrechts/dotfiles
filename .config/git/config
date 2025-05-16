@@ -7,3 +7,6 @@
 [includeIf "gitdir/i:~/.config/"]
     path = ~/.config/git/.gitconfig_personal
 
+[includeIf "gitdir/i:~/.dotfiles/"]
+    path = ~/.config/git/.gitconfig_personal
+
