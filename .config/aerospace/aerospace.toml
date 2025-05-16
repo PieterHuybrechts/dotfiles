@@ -10,9 +10,14 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders'# Start jankyborders at aerospace startup
+  'exec-and-forget borders',
+  'exec-and-forget sketchybar'
 ]
 start-at-login = true
+
+exec-on-workspace-change = ['/bin/bash', '-c',
+    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+]
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 
@@ -133,24 +138,16 @@ automatically-unhide-macos-hidden-apps = false
     alt-2 = 'workspace 2'
     alt-3 = 'workspace 3'
     alt-4 = 'workspace 4'
-    alt-i = 'workspace I' # IDE
-    alt-t = 'workspace T' # TERMINAL
-    alt-b = 'workspace B' # BROWSER
-    alt-c = 'workspace C' # COMMS
+    alt-5 = 'workspace 5'
     alt-p = 'workspace P' # PERSONAL
-    alt-m = 'workspace M' # MICROSOFT
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
     alt-shift-3 = 'move-node-to-workspace 3'
     alt-shift-4 = 'move-node-to-workspace 4'
-    alt-shift-i = 'move-node-to-workspace I' # IDE
-    alt-shift-t = 'move-node-to-workspace T' # TERMINAL
-    alt-shift-b = 'move-node-to-workspace B' # BROWSER
-    alt-shift-c = 'move-node-to-workspace C' # COMMS
+    alt-shift-5 = 'move-node-to-workspace 5'
     alt-shift-p = 'move-node-to-workspace P' # PERSONAL
-    alt-shift-m = 'move-node-to-workspace M' # MICROSOFT
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -176,8 +173,8 @@ automatically-unhide-macos-hidden-apps = false
     shift-down = ['volume set 0', 'mode main']
 
 [[on-window-detected]]
-if.app-id="com.jetbrains.intellij"
-run = ['move-node-to-workspace I']
+if.app-id="com.apple.finder"
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id="com.f5networks.EdgeClient"
@@ -185,4 +182,8 @@ run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id="io.github.hluk.CopyQ"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id="com.teamviewer.TeamViewer"
 run = ["layout floating"]
