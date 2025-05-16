@@ -1,4 +1,5 @@
 *
 !.gitignore
 !config
+!.gitconfig_example
 
