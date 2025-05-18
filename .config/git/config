@@ -10,3 +10,6 @@
 [includeIf "gitdir/i:~/.dotfiles/"]
     path = ~/.config/git/.gitconfig_personal
 
+[core]
+	autocrlf = input
+
