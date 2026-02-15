@@ -1,6 +1,5 @@
 background-opacity = 0.90
 background-blur = 5
-theme = nordfox
 # Disable ligatures
 font-feature = -calt
 
