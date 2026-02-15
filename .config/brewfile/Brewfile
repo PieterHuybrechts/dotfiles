@@ -10,18 +10,23 @@ brew c-ares
 brew ca-certificates
 brew certifi
 brew cffi
+brew cmatrix
 brew coreutils
 brew cryptography
 brew docker
 brew docker-completion
+brew fish
 brew fzf
 brew gettext
+brew gh
 brew git
 brew gmp
 brew gnu-sed
+brew gradle-completion
 brew grep
 brew helm
-brew icu4c@77
+brew htop
+brew icu4c@78
 brew iproute2mac
 brew jq
 brew k9s
@@ -29,8 +34,12 @@ brew krb5
 brew kubectx
 brew kubernetes-cli
 brew kubetail
+brew lftp
 brew libevent
+brew libidn2
 brew libnghttp2
+brew libnghttp3
+brew libngtcp2
 brew libsodium
 brew libssh
 brew libunistring
@@ -58,9 +67,11 @@ brew postgresql@14
 brew pycparser
 brew pyenv
 brew python@3.13
-brew pyyaml
+brew python@3.14
 brew readline
+brew simdjson
 brew sqlite
+brew sshpass
 brew stow
 brew telnet
 brew tlrc
@@ -69,23 +80,27 @@ brew tree
 brew tree-sitter
 brew unibilium
 brew utf8proc
-brew vault
+brew uvwasi
 brew watch
 brew xz
 brew yq
 brew zlib
+brew zoxide
 brew zsh-autosuggestions
+brew zstd
 
 tap homebrew/cask
 cask 1password
+cask alt-tab
 cask betterdisplay
-cask chromium
+cask bluesnooze
+cask copilot-cli
 cask docker
 cask drawio
 cask firefox
 cask firefox@nightly
-cask floorp
 cask font-hack-nerd-font
+cask freelens
 cask ghostty
 cask gimp
 cask google-drive
@@ -94,22 +109,22 @@ cask iina
 cask iterm2
 cask jetbrains-toolbox
 cask karabiner-elements
+cask logitech-g-hub
 cask mac-mouse-fix@2
-cask messenger
-cask microsoft-remote-desktop
 cask obsidian
-cask openlens
-cask openmtp
+cask onlyoffice
 cask podman-desktop
 cask postman
 cask raycast
 cask rectangle
 cask slack
 cask spotify
+cask stats
 cask teamviewer
 cask visual-studio-code
 cask vlc
 cask whatsapp
+cask windows-app
 cask zen
 
 tap felixkratz/formulae
@@ -117,6 +132,7 @@ brew borders
 brew sketchybar
 
 tap hashicorp/tap
+brew vault
 
 tap johanhaleby/kubetail
 
@@ -129,9 +145,12 @@ brew brew-file
 tap sdkman/tap
 brew sdkman-cli
 
+# Other Homebrew packages
+brew pyyaml
+
 # App Store applications
-appstore 1352778147 Bitwarden (2025.5.1)
-appstore 1474276998 HP Smart (18.10.1)
-appstore 803453959 Slack (4.44.59)
-appstore 1278508951 Trello (2.15.9)
+appstore 1352778147 Bitwarden (2025.12.0)
+appstore 1474276998 HP (20.2)
+appstore 6744716215 TaskForge (2.3.0)
+appstore 1278508951 Trello (2.15.18)
 appstore 6450432292 Universal Print (1.0)
